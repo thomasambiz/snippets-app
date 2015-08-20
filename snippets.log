@@ -28,3 +28,16 @@ INFO:root:Contruction parser
 DEBUG:root:Constructing put subparser
 INFO:root:Storing snippet 'Test': 'This is a test'
 DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+INFO:root:Storing snippet 'Test': 'This is a test snippet'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
