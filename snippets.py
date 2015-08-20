@@ -16,19 +16,21 @@ def put(name, snippet):
     command = "insert into snippets values (%s, %s)"
     cursor.execute(command, (name, snippet))
     connection.commit()
-    logging.debug("Snippet stored successfully.")
+    logging.info("Snippet stored successfully.")
     return name, snippet
     
 def get(name):
-    """Retrieve the snippet with a given name.
-
-    If there is no such snippet...
-
-    Returns the snippet.
-    """
-    logging.error("FIXME: Unimplemented - get({!r})".format(name))
-    return "What you want to get does not exist yet"
-
+    """Retrieve the snippet with a given name."""
+    logging.info("Getting snippet {!r}:".format(name))
+    cursor = connection.cursor()
+    command = "select message from snippets where keyword=%s"
+    cursor.execute(command, (name))
+    result = cursor.fetchone()
+    connection.commit()
+    keyword, message = result
+    logging.info("Snippet retrieved successfully.")
+    return result
+    
 def main():
     """Main function"""
     logging.info("Contruction parser")
@@ -51,9 +53,9 @@ def main():
         name, snippet = put(**arguments)
         print("Stored {!r} as {!r}".format(snippet, name))
     elif command == "get":
-        snippets = get(**arguments)
+        snippet = get(**arguments)
         print("Retrieved snippet: {!r}".format(snippet))
     
 if __name__ == "__main__":
     main()
-    
+     

@@ -41,3 +41,27 @@ DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Database connect established.
 INFO:root:Contruction parser
 DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
