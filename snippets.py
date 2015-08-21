@@ -24,10 +24,9 @@ def get(name):
     logging.info("Getting snippet {!r}:".format(name))
     cursor = connection.cursor()
     command = "select message from snippets where keyword=%s"
-    cursor.execute(command, (name))
+    cursor.execute(command, (name,))
     result = cursor.fetchone()
     connection.commit()
-    keyword, message = result
     logging.info("Snippet retrieved successfully.")
     return result
     
@@ -43,6 +42,11 @@ def main():
     put_parser = subparsers.add_parser("put", help="Store a snippet")
     put_parser.add_argument("name", help="The name of the snippet")
     put_parser.add_argument("snippet", help=("The snippet text"))
+    
+    # Subparsers for the get command
+    logging.debug("Constructing get subparser")
+    get_parser = subparsers.add_parser("get", help="Retrieve a snippet")
+    get_parser.add_argument("name", help="The name of the snippet")
     
     arguments = parser.parse_args(sys.argv[1:])
     # Convert parsed arguments from Namespace to dictionary

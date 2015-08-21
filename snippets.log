@@ -65,3 +65,44 @@ DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Database connect established.
 INFO:root:Contruction parser
 DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Getting snippet 'Test':
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Getting snippet 'test':
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Getting snippet 'test':
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Getting snippet 'test':
+INFO:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connect established.
+INFO:root:Contruction parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Getting snippet 'Test':
+INFO:root:Snippet retrieved successfully.
